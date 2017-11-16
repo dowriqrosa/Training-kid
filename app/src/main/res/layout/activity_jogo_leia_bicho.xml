@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aprendabrincando.edvanmatta.com.aprendabrincando.JogoLeiaBicho">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:background="#f5e9b9"
+        tools:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/titulo_jogo_1"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/txtAnimalId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="89dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/caoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cao"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_below="@+id/txtAnimalId"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/gatoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/gato"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@+id/txtAnimalId"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/leaoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/caoId"
+            android:layout_alignStart="@+id/caoId"
+            android:layout_below="@+id/caoId"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/leao" />
+
+        <ImageView
+            android:id="@+id/macacoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gatoId"
+            android:layout_alignStart="@+id/gatoId"
+            android:layout_alignTop="@+id/vacaId"
+            app:srcCompat="@drawable/macaco" />
+
+        <ImageView
+            android:id="@+id/vacaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/leaoId"
+            android:layout_alignStart="@+id/leaoId"
+            android:layout_below="@+id/leaoId"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/vaca" />
+
+        <ImageView
+            android:id="@+id/ovelhaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gatoId"
+            android:layout_alignStart="@+id/gatoId"
+            android:layout_alignTop="@+id/leaoId"
+            app:srcCompat="@drawable/ovelha" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

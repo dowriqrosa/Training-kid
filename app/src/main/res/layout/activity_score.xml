@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aprendabrincando.edvanmatta.com.aprendabrincando.Score">
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:background="@drawable/fundo_escolar"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:hapticFeedbackEnabled="false"
+            android:text="SCORE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="383dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNomeJogoID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtNomeID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/background_light"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtPontoAcertosID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@android:color/background_light"
+                    android:padding="10dp"
+                    android:text="Acertos: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:gravity="center_vertical|center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/txtPontoErrosID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtPontoAcertosID"
+                    android:layout_alignStart="@+id/txtPontoAcertosID"
+                    android:layout_below="@+id/txtPontoAcertosID"
+                    android:layout_marginTop="25dp"
+                    android:background="@android:color/background_light"
+                    android:padding="10dp"
+                    android:text="Erros: "
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtPontoAID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtPontoAcertosID"
+                    android:layout_alignBottom="@+id/txtPontoAcertosID"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="85dp"
+                    android:layout_marginRight="85dp"
+                    android:background="@android:color/background_light"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtPontoEID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtPontoAID"
+                    android:layout_alignStart="@+id/txtPontoAID"
+                    android:layout_alignTop="@+id/txtPontoErrosID"
+                    android:background="@android:color/background_light"
+                    android:backgroundTint="@android:color/background_light"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/botaoVoltarID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@android:color/black"
+                    android:padding="5dp"
+                    android:text="Voltar"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:gravity="center"
+                    android:layout_below="@+id/txtPontoErrosID"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
